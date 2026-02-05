@@ -30,6 +30,7 @@ final class Pet_Management
             {
                 $this->myPet->decreaseHealth(5);
             }
+        $this->myPet->decreaseHealth(2);
         $this->myPet->decreaseHappiness(2);
 
     }
@@ -49,7 +50,7 @@ final class Pet_Management
 
     public function feed(): void
     {
-        $this->myPet->increaseHunger(5);
+        $this->myPet->decreaseHunger(5);
     }
 
     public function play(): void
@@ -72,4 +73,5 @@ final class Pet_Management
     {
         return $this->myPet->getEnergy();
     }
+
 }
